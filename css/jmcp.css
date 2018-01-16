@@ -1,9 +1,6 @@
 .xiala-box li:nth-child(3)>a{
 	color:goldenrod;
 }
-
-
-
 header{
 	height:450px;
 	width:100%;
@@ -142,7 +139,7 @@ nav>div:last-child ul a{
 	height:78px;
 }
 .xiala-box li:hover .xiala2{
-	height:180px;
+	height:80px;
 }
 .word-box{
 	width:100%;

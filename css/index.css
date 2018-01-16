@@ -203,7 +203,7 @@ nav>div:last-child ul a{
 	height:78px;
 }
 .xiala-box li:hover .xiala2{
-	height:180px;
+	height:80px;
 }
 /*研磨时光START*/	
 .jies{
@@ -654,5 +654,5 @@ footer ul li a:hover{
 	display: block;
 }
 .js-box{
-	display: none;
+	/*display: none;*/
 }
