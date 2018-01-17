@@ -2,18 +2,26 @@
 	color:goldenrod;
 }
 header{
-	height:669px;
+	height:70px;
 	width:100%;
 	background-size:100% 100%;
+	background: rgba(0,0,0,0.7);
+	position:fixed;
+	top:0;
+	right:0;
+	z-index: 999;
 }
 .js-banner{
 	width:100%;
 	height: 669px;
+	position: relative;
 }
 .b-img{
 	width:100%;
 	height:100%;
-	position: relative;
+	position: absolute;
+	top: 0;
+	left: 0;
 }
 .b-img img{
 	width:100%;
@@ -42,7 +50,7 @@ header{
 	background:rgba(0,0,0,0.8);
 	border-radius:5px;
 	font-size: 20px;
-	color:#FFFDEF;	
+	color:#FFFDEF;
 	line-height: 60px;
 	text-align: center;
 	cursor:pointer;
@@ -59,7 +67,7 @@ header{
 	background:rgba(0,0,0,0.8);
 	border-radius:5px;
 	font-size: 20px;
-	color:#FFFDEF;	
+	color:#FFFDEF;
 	line-height: 60px;
 	text-align: center;
 	cursor:pointer;
@@ -68,18 +76,12 @@ header{
 	width:15px;
 	height:15px;
 	border-radius: 50%;
-	padding:0,6px;
 	background: rgba(0,0,0,0.9);
 	cursor: pointer;
 }
 .top-box{
 	width:100%;
-	height:71px;
-	background: rgba(0,0,0,0.7);
-	position:fixed;
-	top:0;
-	right:0;
-	z-index: 999;
+	height:70px;
 }
 .circles{
 	width:200px;
@@ -88,7 +90,7 @@ header{
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
-	position: absolute;	
+	position: absolute;
 	left:0px;
 	right:0px;
 	margin-right:auto;
@@ -151,6 +153,7 @@ nav>div:last-child ul a{
 	position: relative;
 	/*overflow: hidden;*/
 	text-align: center;
+	cursor: pointer;
 }
 .xiala{
 	position: absolute;
@@ -158,34 +161,15 @@ nav>div:last-child ul a{
 	right:0;
 	margin-left: auto;
 	margin-right: auto;
-	top:36px;
+	top:35px;
 	color: #FFFFFF;
 	background: black;
 	overflow: hidden;
-	height:0px;	
-	transition: 0.7s;
+	height:auto;
+	display: none;
 	background: rgba(0,0,0,0.7);
 }
-.xiala2{
-	position: absolute;
-	left:0;
-	top:36px;
-	left:0;
-	right:0;
-	margin-left: auto;
-	margin-right: auto;
-	color: #FFFFFF;
-	background: black;
-	overflow: hidden;
-	height:0px;	
-	transition: 0.7s;
-	background: rgba(0,0,0,0.7);
-}
-.xiala2 a{
-	display: block;
-	text-align: center;
-	padding-top:12px;
-}
+
 .xiala a{
 	display: block;
 	padding-top:12px;
@@ -195,17 +179,8 @@ nav>div:last-child ul a{
 	display: block;
 	padding-bottom: 12px;
 }
-.xiala2 a:last-of-type{
-	display: block;
-	padding-bottom: 12px;
-}
-.xiala-box li:hover .xiala{
-	height:78px;
-}
-.xiala-box li:hover .xiala2{
-	height:80px;
-}
-/*研磨时光START*/	
+
+/*研磨时光START*/
 .jies{
 	width:100%;
 	height:161px;
@@ -242,7 +217,7 @@ video{
 	width:450px;
 	height:257px;
 	/*margin: 0 auto;*/
-	
+
 }
 .video div:last-child{
 	float:right;
@@ -280,7 +255,7 @@ video{
 }
 .store-box{
 	width:100%;
-	height:520px;  
+	height:520px;
 	background:url(../img/kfd2.jpg) no-repeat center center;
 	background-size: cover;
 }
@@ -327,7 +302,7 @@ video{
 	height:100%;
 }
 .store-right>a>div div:first-child>p:first-child{
-	
+
 	margin-top:20px;
 }
 .store-right>a>div div:first-child>p:nth-child(2){
@@ -352,26 +327,26 @@ video{
 	/*opacity: 0.7;*/
 	border-radius: 50%;
 	box-shadow: 0 0 0 9px rgba(255,255,255,0.3) inset;
-	
+
 }
 .store-c>a>div div:first-child:hover {
 	animation: xuanzhuan 1s forwards;
 }.store-c>a>div div:nth-child(2):hover {
-	animation: xuanzhuan 1s forwards;
-}
+	 animation: xuanzhuan 1s forwards;
+ }
 .store-c>a>div div:nth-child(3):hover {
 	animation: xuanzhuan 1s forwards;
 }
 @keyframes xuanzhuan{
-			
-			from{
-		
-				transform:rotate(0deg);
-			}
-			to{
-				transform:rotate(360deg);
-			}
-		}
+
+	from{
+
+		transform:rotate(0deg);
+	}
+	to{
+		transform:rotate(360deg);
+	}
+}
 .store-c>a>div div:nth-child(2){
 	background:url(../img/kfd2.jpg) no-repeat center center;
 	background-size: cover;
@@ -449,7 +424,7 @@ video{
 .foot li{
 	flex-grow:1;
 	text-align: center;
-	
+
 }
 .foot a p{
 	margin-top:8px;
@@ -547,8 +522,22 @@ video{
 	float: right;
 	height:100%;
 }
-.sshx-box a{
+.kfwh a{
 	display: block;
+	width:380px;
+	float:left;
+	overflow: hidden;
+	text-overflow:ellipsis;
+	white-space: nowrap;
+	color:#666666;
+	font-size: 14px;
+}
+.kfwh span{
+	display: block;
+	float: right;
+	color: #666666;
+	font-size: 14px;
+	padding-right: 50px;
 }
 .sshx a:hover{
 	color:goldenrod;
@@ -559,22 +548,36 @@ video{
 	height:220px;
 	transition: all 1s;
 }
+.kfwh{
+	width:580px;
+	height: 19px;
+	padding-bottom: 9px;
+}
 #pic{
 	width:560px;
+	display: block;
+	height: 220px;
 	overflow: hidden;
 	padding: 0px;
 	position: relative;
-} 
+}
+#pic1{
+	width:560px;
+	overflow: hidden;
+	padding: 0px;
+	display: block;
+	height: 220px;
+}
 .sshx-box img:hover{
 	transform: scale(1.2,1.2);
 }
 .sshx-box h1{
+	height: 40px;
 	font-size: 20px;
-	position: relative;
-	padding-bottom: 12px;
+	line-height: 40px   ;
 	border-bottom: 1px solid #999999;
 	box-sizing: border-box;
-	width:550px;
+	width:100%;
 }
 .sshx h1 a{
 	line-height: 39px;
@@ -654,5 +657,8 @@ footer ul li a:hover{
 	display: block;
 }
 .js-box{
-	/*display: none;*/
+	display: none;
+}
+.js-box1{
+	display: block;
 }

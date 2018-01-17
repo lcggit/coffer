@@ -101,7 +101,7 @@ nav>div:last-child ul a{
 	color: #FFFFFF;
 	background: black;
 	overflow: hidden;
-	height:0px;	
+	height:0px;
 	transition: 0.7s;
 	background: rgba(0,0,0,0.7);
 }
@@ -116,7 +116,7 @@ nav>div:last-child ul a{
 	color: #FFFFFF;
 	background: black;
 	overflow: hidden;
-	height:0px;	
+	height:0px;
 	transition: 0.7s;
 	background: rgba(0,0,0,0.7);
 }
@@ -353,6 +353,7 @@ nav>div:last-child ul a{
 	justify-content: space-between;
 	flex-wrap: wrap;
 	margin-top: 70px;
+	overflow: hidden;
 }
 .img-box>div{
 	width:25%;
@@ -387,7 +388,7 @@ nav>div:last-child ul a{
 }
 .img-box>div>a:hover p{
 	opacity: 0.6;
-	
+
 }
 .zi{
 	width:90%;
@@ -401,8 +402,9 @@ nav>div:last-child ul a{
 	margin-left:auto;
 	margin-right:auto;
 	z-index: 999;
-	display: none;
 	overflow: hidden;
+	opacity: 0;
+	transition:all 0.5s;
 }
 .img-box>div>a:hover .zi{
 	display: block;
@@ -421,13 +423,19 @@ nav>div:last-child ul a{
 	color:#999;
 	text-align: center;
 	margin-top:30px;
-	}
-.zi span{
-	transform:scale(2,2);
-	transition: all ease-out 0.3s;
 }
-.zi:hover span{
+.img-box>div span{
+	transform:scale(0,0);
+	opacity: 0;
+	transition: all 0.5s;
+}
+
+.img-box>div:hover span{
+	opacity: 1;
 	transform: scale(1,1);
+}
+.img-box>div:hover .zi{
+	opacity: 1;
 }
 footer{
 	width:100%;
